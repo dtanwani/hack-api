@@ -4,7 +4,7 @@ import pandas as pd
 from flask import Flask, request, jsonify
 app = Flask(__name__)
 
-sample_data = pd.read_csv("C:\Divya_documents\Python_learning\Edureka_Python_Course\sample.csv")
+sample_data = pd.read_csv("sample.csv")
 data=sample_data.sketch.ask("Can you give me friendly names, Business descriptions, and flag (Yes/No) tell if there is any PII information for each column?(output as JSON)",call_display=False)
 
 
